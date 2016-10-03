@@ -1,0 +1,74 @@
+.answer .card-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.answer .card-text h4 {
+    color: #27ae60;
+    font-size: 1.2em;
+}
+
+.answer .card-text:nth-child(1) {
+    box-sizing: border-box;
+    width: 25%;
+    margin-right: 7%;
+    padding-right: 5%;
+    border-right: 1px solid #ecf0f1;
+}
+
+.answer .card-text:nth-child(2) {
+    width: 60%;
+}
+
+body {
+    background: #F8F8F8;
+}
+
+#reply_author {
+    width: 40%;
+}
+
+#reply_authorEmail {
+    width: 40%;
+}
+
+#reply_comment {
+    height: 200px;
+}
+
+.form-control {
+    background: #F8F8F8;
+    color: #2ecc71;
+}
+
+.form-control:focus {
+    border-color: #2ecc71;
+}
+
+#sendForm {
+    display: block;
+    width: 200px;
+    height: 40px;
+    left: 0; right: 0;
+    margin: auto;
+    background: #27ae60;
+    color: #F8F8F8;
+    border: none;
+    border-radius: 10px;
+}
+
+#sendForm:hover {
+    background: #2ecc71;
+}
+
+p {
+    margin: 0;
+}
+
+.Negative {
+    background: #F9F9F9;
+}
+
+.Negative * {
+    color: #95a5a6 !important;
+}

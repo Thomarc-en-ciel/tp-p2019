@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Sujets' %}
+
+{% block body %}
+    <article class="answer card card-block">
+        <form action="{{ path('subject_create') }}" method="POST" novalidate='novalidate'>
+            {{form_widget(form)}}
+            <button id="sendForm" type="submit">SEND</button>
+        </form>
+    </article>
+{% endblock %}

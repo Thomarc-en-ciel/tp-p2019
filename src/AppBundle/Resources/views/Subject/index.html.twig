@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Sujets' %}
+
+{% block body %}
+    <a href="{{ path('subject_resolved') }}">Resolved</a>
+    <a href="{{ path('subject_create') }}">Create</a>
+    {% for subject in subjects %}
+        {{ include('subject/subject-template.html.twig', { 'subject': subject }) }}
+    {% endfor %}
+{% endblock %}

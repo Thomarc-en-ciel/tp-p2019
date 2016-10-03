@@ -1,0 +1,16 @@
+'AppBundle\Entity\Subject':
+    subject_{1..25}:
+        title: '<sentence()>'
+        description: '<sentences(3, true)>'
+        resolved: true
+    subject_{26..50}:
+        title: '<sentence()>'
+        description: '<sentences(3, true)>'
+        resolved: false
+
+'AppBundle\Entity\Reply':
+    reply_{1..500}:
+        subject: '@subject_*'
+        comment: '<sentences(3, true)>'
+        author: '<name()>'
+        authorEmail: '<email()>'

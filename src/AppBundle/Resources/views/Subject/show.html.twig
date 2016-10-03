@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Sujets' %}
+
+{% block body %}
+   {{ include('subject/subject-template.html.twig', { 'subject': subject }) }}
+    {% for reply in subject.replies %}
+        {{ include('subject/reply-template.html.twig', { 'reply': reply }) }}  
+    {% endfor %}
+    <article class="answer card card-block">
+        <form action="{{ path('subject_single', {id:subject.id}) }}" method="POST" novalidate='novalidate'>
+            {{form_widget(form)}}
+            <button id="sendForm" type="submit">SEND</button>
+        </form>
+    </article>
+{% endblock %}

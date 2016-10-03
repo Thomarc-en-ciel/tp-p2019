@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Sujets' %}
+
+{% block body %}
+    <a href="{{ path('subject_index') }}">Not Resolved</a>
+    {% for subject in subjects %}
+        {{ include('subject/subject-no-button.html.twig', { 'subject': subject }) }}
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,1 @@
+docker run --rm --volume "/c/Users/Pred0ta/Documents/Symphony/tp-p2019:/www" tpp2019_cli php composer.phar install
